@@ -1,4 +1,4 @@
 # Algoritms
 
-# search
+# Search
 1. Linear Search
