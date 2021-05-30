@@ -5,4 +5,4 @@
 2. [Binary Search](https://youtu.be/Q-ITmLYHwMQ)
 
 # B. SORT
-1. Insertion Sort
+1. [Insertion Sort](https://youtu.be/BNrtNctyMxw)
