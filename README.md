@@ -6,3 +6,5 @@
 
 # B. SORT
 1. [Insertion Sort](https://youtu.be/BNrtNctyMxw)
+2. [Selection Sort](https://www.youtube.com/watch?v=yMVCgqbh7qQ)
+3. [Bubble Sort](https://www.youtube.com/watch?v=DpNiewE-Mbg)
