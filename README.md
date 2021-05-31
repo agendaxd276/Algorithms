@@ -1,4 +1,6 @@
 # [A L G O R I T H M S](https://www.youtube.com/playlist?list=PLF7ypemOdw8SY3Wm5fSUd13aDZvYqety3)
+<img height="30" src="https://img.shields.io/badge/youtube-red.svg?&style=for-the-badge&logo=youtube&logoColor=white" />[YouTube]
+
 
 # A. S E A R C H
 1. [Linear Search](https://youtu.be/Bp-hNxWKm3s)
