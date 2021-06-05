@@ -11,6 +11,8 @@
 2. [Selection Sort](https://www.youtube.com/watch?v=yMVCgqbh7qQ)
 3. [Bubble Sort](https://www.youtube.com/watch?v=DpNiewE-Mbg)
 4. [Quick Sort](https://youtu.be/fKoPcm-FPdQ)
+5. [Merge Sort](https://www.youtube.com/watch?v=nQ3dZzH4iLo)
+6. [Heap Sort](https://youtu.be/0T3dxGvx5Q4)
 
 
 
