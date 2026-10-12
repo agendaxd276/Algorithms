@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 370" width="720" height="370" role="img" aria-label="Quick Sort - worst-case comparisons as n grows">
+<title>Quick Sort - worst-case comparisons as n grows</title><desc>A straight line on log-log axes: steeper = faster growth. Measured, n = 8 … 512.</desc>
+<style>
+svg{--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--grid:#e3e2de;--bar:#c4cad3;
+--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300}
+@media (prefers-color-scheme:dark){svg{--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--grid:#363633;
+--bar:#4b5058;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300}}
+text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--ink)}
+.t{font-size:15px;font-weight:600}.sub{font-size:11px;fill:var(--ink2)}.lab{font-size:10.5px;fill:var(--ink2)}
+.val{font-size:10.5px;font-weight:600}.cap{font-size:11px}.idx{font-size:9px;fill:var(--ink2)}
+.grid{stroke:var(--grid);stroke-width:1}.axis{stroke:var(--ink2);stroke-width:1}
+.bar{fill:var(--bar)}.cmp{fill:var(--s1)}.act{fill:var(--s2)}.done{fill:var(--s3)}.dim{fill:var(--bar);opacity:.45}
+.s1{fill:var(--s1)}.s2{fill:var(--s2)}.s3{fill:var(--s3)}.s4{fill:var(--s4)}.s5{fill:var(--s5)}.s6{fill:var(--s6)}
+.l1{stroke:var(--s1)}.l2{stroke:var(--s2)}.l3{stroke:var(--s3)}.l4{stroke:var(--s4)}.l5{stroke:var(--s5)}.l6{stroke:var(--s6)}
+.line{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.frame{fill:none;stroke:var(--grid);stroke-width:1}
+</style>
+<rect width="720" height="370" rx="10" fill="var(--surface)"/>
+<text x="20.0" y="26.0" class="t" text-anchor="start">Quick Sort - worst-case comparisons as n grows</text>
+<text x="20.0" y="44.0" class="sub" text-anchor="start">A straight line on log-log axes: steeper = faster growth. Measured, n = 8 … 512.</text>
+<rect x="20" y="57" width="11" height="11" rx="2" class="s1"/>
+<text x="36.0" y="66.0" class="lab" text-anchor="start">normal</text>
+<rect x="81.2" y="57" width="11" height="11" rx="2" class="s2"/>
+<text x="97.2" y="66.0" class="lab" text-anchor="start">optimal</text>
+<rect x="148.60000000000002" y="57" width="11" height="11" rx="2" class="s3"/>
+<text x="164.6" y="66.0" class="lab" text-anchor="start">optimized</text>
+<line x1="62" x2="505" y1="324.0" y2="324.0" class="grid"/>
+<text x="56.0" y="328.0" class="lab" text-anchor="end">10</text>
+<line x1="62" x2="505" y1="279.2" y2="279.2" class="grid"/>
+<text x="56.0" y="283.2" class="lab" text-anchor="end">100</text>
+<line x1="62" x2="505" y1="234.4" y2="234.4" class="grid"/>
+<text x="56.0" y="238.4" class="lab" text-anchor="end">1k</text>
+<line x1="62" x2="505" y1="189.6" y2="189.6" class="grid"/>
+<text x="56.0" y="193.6" class="lab" text-anchor="end">10k</text>
+<line x1="62" x2="505" y1="144.8" y2="144.8" class="grid"/>
+<text x="56.0" y="148.8" class="lab" text-anchor="end">100k</text>
+<line x1="62" x2="505" y1="100.0" y2="100.0" class="grid"/>
+<text x="56.0" y="104.0" class="lab" text-anchor="end">1M</text>
+<text x="62.0" y="340.0" class="lab" text-anchor="middle">8</text>
+<text x="135.8" y="340.0" class="lab" text-anchor="middle">16</text>
+<text x="209.7" y="340.0" class="lab" text-anchor="middle">32</text>
+<text x="283.5" y="340.0" class="lab" text-anchor="middle">64</text>
+<text x="357.3" y="340.0" class="lab" text-anchor="middle">128</text>
+<text x="431.2" y="340.0" class="lab" text-anchor="middle">256</text>
+<text x="505.0" y="340.0" class="lab" text-anchor="middle">512</text>
+<text x="283.5" y="362.0" class="sub" text-anchor="middle">input size n (log scale)</text>
+<text x="14.0" y="88.0" class="sub" text-anchor="start">comparisons (log scale)</text>
+<polyline points="62.0,304.0 135.8,275.7 209.7,248.0 283.5,220.8 357.3,193.6 431.2,166.6 505.0,139.6" class="line l1"/>
+<circle cx="62.0" cy="304.0" r="3" class="s1" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="135.8" cy="275.7" r="3" class="s1" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="209.7" cy="248.0" r="3" class="s1" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="283.5" cy="220.8" r="3" class="s1" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="357.3" cy="193.6" r="3" class="s1" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="431.2" cy="166.6" r="3" class="s1" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="505.0" cy="139.6" r="3" class="s1" stroke="var(--surface)" stroke-width="2"/>
+<polyline points="62.0,304.0 135.8,275.7 209.7,248.0 283.5,220.8 357.3,193.6 431.2,166.6 505.0,139.6" class="line l2"/>
+<circle cx="62.0" cy="304.0" r="3" class="s2" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="135.8" cy="275.7" r="3" class="s2" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="209.7" cy="248.0" r="3" class="s2" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="283.5" cy="220.8" r="3" class="s2" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="357.3" cy="193.6" r="3" class="s2" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="431.2" cy="166.6" r="3" class="s2" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="505.0" cy="139.6" r="3" class="s2" stroke="var(--surface)" stroke-width="2"/>
+<polyline points="62.0,304.0 135.8,275.7 209.7,260.3 283.5,242.3 357.3,220.6 431.2,201.3 505.0,180.0" class="line l3"/>
+<circle cx="62.0" cy="304.0" r="3" class="s3" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="135.8" cy="275.7" r="3" class="s3" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="209.7" cy="260.3" r="3" class="s3" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="283.5" cy="242.3" r="3" class="s3" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="357.3" cy="220.6" r="3" class="s3" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="431.2" cy="201.3" r="3" class="s3" stroke="var(--surface)" stroke-width="2"/>
+<circle cx="505.0" cy="180.0" r="3" class="s3" stroke="var(--surface)" stroke-width="2"/>
+<rect x="511" y="134.6" width="9" height="9" rx="2" class="s1"/>
+<text x="524.0" y="143.6" class="lab" text-anchor="start">normal = optimal</text>
+<rect x="511" y="175.0" width="9" height="9" rx="2" class="s3"/>
+<text x="524.0" y="184.0" class="lab" text-anchor="start">optimized</text>
+<line x1="62" x2="505" y1="324" y2="324" class="axis"/>
+</svg>
