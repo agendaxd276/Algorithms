@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 426" width="770" height="426" role="img" aria-label="Merge Sort - step by step">
+<title>Merge Sort - step by step</title><desc>Example input [5, 2, 4, 6, 1, 3] - milestone steps (full trace in the table below)</desc>
+<style>
+svg{--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--grid:#e3e2de;--bar:#c4cad3;
+--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300}
+@media (prefers-color-scheme:dark){svg{--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--grid:#363633;
+--bar:#4b5058;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300}}
+text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--ink)}
+.t{font-size:15px;font-weight:600}.sub{font-size:11px;fill:var(--ink2)}.lab{font-size:10.5px;fill:var(--ink2)}
+.val{font-size:10.5px;font-weight:600}.cap{font-size:11px}.idx{font-size:9px;fill:var(--ink2)}
+.grid{stroke:var(--grid);stroke-width:1}.axis{stroke:var(--ink2);stroke-width:1}
+.bar{fill:var(--bar)}.cmp{fill:var(--s1)}.act{fill:var(--s2)}.done{fill:var(--s3)}.dim{fill:var(--bar);opacity:.45}
+.s1{fill:var(--s1)}.s2{fill:var(--s2)}.s3{fill:var(--s3)}.s4{fill:var(--s4)}.s5{fill:var(--s5)}.s6{fill:var(--s6)}
+.l1{stroke:var(--s1)}.l2{stroke:var(--s2)}.l3{stroke:var(--s3)}.l4{stroke:var(--s4)}.l5{stroke:var(--s5)}.l6{stroke:var(--s6)}
+.line{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.frame{fill:none;stroke:var(--grid);stroke-width:1}
+</style>
+<rect width="770" height="426" rx="10" fill="var(--surface)"/>
+<text x="20.0" y="28.0" class="t" text-anchor="start">Merge Sort - step by step</text>
+<text x="20.0" y="46.0" class="sub" text-anchor="start">Example input [5, 2, 4, 6, 1, 3] - milestone steps (full trace in the table below)</text>
+<rect x="20" y="57" width="11" height="11" rx="2" class="bar"/>
+<text x="36.0" y="66.0" class="lab" text-anchor="start">untouched</text>
+<rect x="99.80000000000001" y="57" width="11" height="11" rx="2" class="cmp"/>
+<text x="115.8" y="66.0" class="lab" text-anchor="start">comparing / split</text>
+<rect x="229.20000000000002" y="57" width="11" height="11" rx="2" class="act"/>
+<text x="245.2" y="66.0" class="lab" text-anchor="start">swapped / moved / pivot</text>
+<rect x="395.8" y="57" width="11" height="11" rx="2" class="done"/>
+<text x="411.8" y="66.0" class="lab" text-anchor="start">final position</text>
+<rect x="14" y="78" width="242" height="164" rx="8" class="frame"/>
+<text x="24.0" y="94.0" class="val" text-anchor="start">Step 1</text>
+<rect x="31.1" y="128.3" width="26.2" height="51.7" rx="2" class="bar"/>
+<text x="44.2" y="125.3" class="val" text-anchor="middle">5</text>
+<text x="44.2" y="191.0" class="idx" text-anchor="middle">0</text>
+<rect x="67.4" y="159.3" width="26.2" height="20.7" rx="2" class="bar"/>
+<text x="80.5" y="156.3" class="val" text-anchor="middle">2</text>
+<text x="80.5" y="191.0" class="idx" text-anchor="middle">1</text>
+<rect x="103.8" y="138.7" width="26.2" height="41.3" rx="2" class="bar"/>
+<text x="116.8" y="135.7" class="val" text-anchor="middle">4</text>
+<text x="116.8" y="191.0" class="idx" text-anchor="middle">2</text>
+<rect x="140.1" y="118.0" width="26.2" height="62.0" rx="2" class="bar"/>
+<text x="153.2" y="115.0" class="val" text-anchor="middle">6</text>
+<text x="153.2" y="191.0" class="idx" text-anchor="middle">3</text>
+<rect x="176.4" y="169.7" width="26.2" height="10.3" rx="2" class="bar"/>
+<text x="189.5" y="166.7" class="val" text-anchor="middle">1</text>
+<text x="189.5" y="191.0" class="idx" text-anchor="middle">4</text>
+<rect x="212.8" y="149.0" width="26.2" height="31.0" rx="2" class="bar"/>
+<text x="225.8" y="146.0" class="val" text-anchor="middle">3</text>
+<text x="225.8" y="191.0" class="idx" text-anchor="middle">5</text>
+<line x1="26" x2="244" y1="180" y2="180" class="axis"/>
+<text x="24.0" y="206.0" class="cap" text-anchor="start">Start: unsorted array.</text>
+<rect x="264" y="78" width="242" height="164" rx="8" class="frame"/>
+<text x="274.0" y="94.0" class="val" text-anchor="start">Step 2</text>
+<rect x="281.1" y="128.3" width="26.2" height="51.7" rx="2" class="bar"/>
+<text x="294.2" y="125.3" class="val" text-anchor="middle">5</text>
+<text x="294.2" y="191.0" class="idx" text-anchor="middle">0</text>
+<rect x="317.4" y="159.3" width="26.2" height="20.7" rx="2" class="act"/>
+<text x="330.5" y="156.3" class="val" text-anchor="middle">2</text>
+<text x="330.5" y="191.0" class="idx" text-anchor="middle">1</text>
+<rect x="353.8" y="138.7" width="26.2" height="41.3" rx="2" class="act"/>
+<text x="366.8" y="135.7" class="val" text-anchor="middle">4</text>
+<text x="366.8" y="191.0" class="idx" text-anchor="middle">2</text>
+<rect x="390.1" y="118.0" width="26.2" height="62.0" rx="2" class="bar"/>
+<text x="403.2" y="115.0" class="val" text-anchor="middle">6</text>
+<text x="403.2" y="191.0" class="idx" text-anchor="middle">3</text>
+<rect x="426.4" y="169.7" width="26.2" height="10.3" rx="2" class="bar"/>
+<text x="439.5" y="166.7" class="val" text-anchor="middle">1</text>
+<text x="439.5" y="191.0" class="idx" text-anchor="middle">4</text>
+<rect x="462.8" y="149.0" width="26.2" height="31.0" rx="2" class="bar"/>
+<text x="475.8" y="146.0" class="val" text-anchor="middle">3</text>
+<text x="475.8" y="191.0" class="idx" text-anchor="middle">5</text>
+<line x1="276" x2="494" y1="180" y2="180" class="axis"/>
+<text x="274.0" y="206.0" class="cap" text-anchor="start">Merge [2] + [4] -&gt; [2, 4].</text>
+<rect x="514" y="78" width="242" height="164" rx="8" class="frame"/>
+<text x="524.0" y="94.0" class="val" text-anchor="start">Step 3</text>
+<rect x="531.1" y="159.3" width="26.2" height="20.7" rx="2" class="act"/>
+<text x="544.2" y="156.3" class="val" text-anchor="middle">2</text>
+<text x="544.2" y="191.0" class="idx" text-anchor="middle">0</text>
+<rect x="567.4" y="138.7" width="26.2" height="41.3" rx="2" class="act"/>
+<text x="580.5" y="135.7" class="val" text-anchor="middle">4</text>
+<text x="580.5" y="191.0" class="idx" text-anchor="middle">1</text>
+<rect x="603.8" y="128.3" width="26.2" height="51.7" rx="2" class="act"/>
+<text x="616.8" y="125.3" class="val" text-anchor="middle">5</text>
+<text x="616.8" y="191.0" class="idx" text-anchor="middle">2</text>
+<rect x="640.1" y="118.0" width="26.2" height="62.0" rx="2" class="bar"/>
+<text x="653.2" y="115.0" class="val" text-anchor="middle">6</text>
+<text x="653.2" y="191.0" class="idx" text-anchor="middle">3</text>
+<rect x="676.4" y="169.7" width="26.2" height="10.3" rx="2" class="bar"/>
+<text x="689.5" y="166.7" class="val" text-anchor="middle">1</text>
+<text x="689.5" y="191.0" class="idx" text-anchor="middle">4</text>
+<rect x="712.8" y="149.0" width="26.2" height="31.0" rx="2" class="bar"/>
+<text x="725.8" y="146.0" class="val" text-anchor="middle">3</text>
+<text x="725.8" y="191.0" class="idx" text-anchor="middle">5</text>
+<line x1="526" x2="744" y1="180" y2="180" class="axis"/>
+<text x="524.0" y="206.0" class="cap" text-anchor="start">Merge [5] + [2, 4] -&gt; [2, 4, 5].</text>
+<rect x="14" y="248" width="242" height="164" rx="8" class="frame"/>
+<text x="24.0" y="264.0" class="val" text-anchor="start">Step 4</text>
+<rect x="31.1" y="329.3" width="26.2" height="20.7" rx="2" class="bar"/>
+<text x="44.2" y="326.3" class="val" text-anchor="middle">2</text>
+<text x="44.2" y="361.0" class="idx" text-anchor="middle">0</text>
+<rect x="67.4" y="308.7" width="26.2" height="41.3" rx="2" class="bar"/>
+<text x="80.5" y="305.7" class="val" text-anchor="middle">4</text>
+<text x="80.5" y="361.0" class="idx" text-anchor="middle">1</text>
+<rect x="103.8" y="298.3" width="26.2" height="51.7" rx="2" class="bar"/>
+<text x="116.8" y="295.3" class="val" text-anchor="middle">5</text>
+<text x="116.8" y="361.0" class="idx" text-anchor="middle">2</text>
+<rect x="140.1" y="288.0" width="26.2" height="62.0" rx="2" class="bar"/>
+<text x="153.2" y="285.0" class="val" text-anchor="middle">6</text>
+<text x="153.2" y="361.0" class="idx" text-anchor="middle">3</text>
+<rect x="176.4" y="339.7" width="26.2" height="10.3" rx="2" class="act"/>
+<text x="189.5" y="336.7" class="val" text-anchor="middle">1</text>
+<text x="189.5" y="361.0" class="idx" text-anchor="middle">4</text>
+<rect x="212.8" y="319.0" width="26.2" height="31.0" rx="2" class="act"/>
+<text x="225.8" y="316.0" class="val" text-anchor="middle">3</text>
+<text x="225.8" y="361.0" class="idx" text-anchor="middle">5</text>
+<line x1="26" x2="244" y1="350" y2="350" class="axis"/>
+<text x="24.0" y="376.0" class="cap" text-anchor="start">Merge [1] + [3] -&gt; [1, 3].</text>
+<rect x="264" y="248" width="242" height="164" rx="8" class="frame"/>
+<text x="274.0" y="264.0" class="val" text-anchor="start">Step 5</text>
+<rect x="281.1" y="329.3" width="26.2" height="20.7" rx="2" class="bar"/>
+<text x="294.2" y="326.3" class="val" text-anchor="middle">2</text>
+<text x="294.2" y="361.0" class="idx" text-anchor="middle">0</text>
+<rect x="317.4" y="308.7" width="26.2" height="41.3" rx="2" class="bar"/>
+<text x="330.5" y="305.7" class="val" text-anchor="middle">4</text>
+<text x="330.5" y="361.0" class="idx" text-anchor="middle">1</text>
+<rect x="353.8" y="298.3" width="26.2" height="51.7" rx="2" class="bar"/>
+<text x="366.8" y="295.3" class="val" text-anchor="middle">5</text>
+<text x="366.8" y="361.0" class="idx" text-anchor="middle">2</text>
+<rect x="390.1" y="339.7" width="26.2" height="10.3" rx="2" class="act"/>
+<text x="403.2" y="336.7" class="val" text-anchor="middle">1</text>
+<text x="403.2" y="361.0" class="idx" text-anchor="middle">3</text>
+<rect x="426.4" y="319.0" width="26.2" height="31.0" rx="2" class="act"/>
+<text x="439.5" y="316.0" class="val" text-anchor="middle">3</text>
+<text x="439.5" y="361.0" class="idx" text-anchor="middle">4</text>
+<rect x="462.8" y="288.0" width="26.2" height="62.0" rx="2" class="act"/>
+<text x="475.8" y="285.0" class="val" text-anchor="middle">6</text>
+<text x="475.8" y="361.0" class="idx" text-anchor="middle">5</text>
+<line x1="276" x2="494" y1="350" y2="350" class="axis"/>
+<text x="274.0" y="376.0" class="cap" text-anchor="start">Merge [6] + [1, 3] -&gt; [1, 3, 6].</text>
+<rect x="514" y="248" width="242" height="164" rx="8" class="frame"/>
+<text x="524.0" y="264.0" class="val" text-anchor="start">Step 6</text>
+<rect x="531.1" y="339.7" width="26.2" height="10.3" rx="2" class="act"/>
+<text x="544.2" y="336.7" class="val" text-anchor="middle">1</text>
+<text x="544.2" y="361.0" class="idx" text-anchor="middle">0</text>
+<rect x="567.4" y="329.3" width="26.2" height="20.7" rx="2" class="act"/>
+<text x="580.5" y="326.3" class="val" text-anchor="middle">2</text>
+<text x="580.5" y="361.0" class="idx" text-anchor="middle">1</text>
+<rect x="603.8" y="319.0" width="26.2" height="31.0" rx="2" class="act"/>
+<text x="616.8" y="316.0" class="val" text-anchor="middle">3</text>
+<text x="616.8" y="361.0" class="idx" text-anchor="middle">2</text>
+<rect x="640.1" y="308.7" width="26.2" height="41.3" rx="2" class="act"/>
+<text x="653.2" y="305.7" class="val" text-anchor="middle">4</text>
+<text x="653.2" y="361.0" class="idx" text-anchor="middle">3</text>
+<rect x="676.4" y="298.3" width="26.2" height="51.7" rx="2" class="act"/>
+<text x="689.5" y="295.3" class="val" text-anchor="middle">5</text>
+<text x="689.5" y="361.0" class="idx" text-anchor="middle">4</text>
+<rect x="712.8" y="288.0" width="26.2" height="62.0" rx="2" class="act"/>
+<text x="725.8" y="285.0" class="val" text-anchor="middle">6</text>
+<text x="725.8" y="361.0" class="idx" text-anchor="middle">5</text>
+<line x1="526" x2="744" y1="350" y2="350" class="axis"/>
+<text x="524.0" y="376.0" class="cap" text-anchor="start">Merge [2, 4, 5] + [1, 3, 6] -&gt; [1, 2,</text>
+<text x="524.0" y="389.0" class="cap" text-anchor="start">3, 4, 5, 6].</text>
+</svg>

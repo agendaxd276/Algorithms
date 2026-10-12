@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 426" width="520" height="426" role="img" aria-label="Linear Search - step by step">
+<title>Linear Search - step by step</title><desc>Milestone steps; lo / mid / hi mark the search window</desc>
+<style>
+svg{--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--grid:#e3e2de;--bar:#c4cad3;
+--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300}
+@media (prefers-color-scheme:dark){svg{--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--grid:#363633;
+--bar:#4b5058;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300}}
+text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--ink)}
+.t{font-size:15px;font-weight:600}.sub{font-size:11px;fill:var(--ink2)}.lab{font-size:10.5px;fill:var(--ink2)}
+.val{font-size:10.5px;font-weight:600}.cap{font-size:11px}.idx{font-size:9px;fill:var(--ink2)}
+.grid{stroke:var(--grid);stroke-width:1}.axis{stroke:var(--ink2);stroke-width:1}
+.bar{fill:var(--bar)}.cmp{fill:var(--s1)}.act{fill:var(--s2)}.done{fill:var(--s3)}.dim{fill:var(--bar);opacity:.45}
+.s1{fill:var(--s1)}.s2{fill:var(--s2)}.s3{fill:var(--s3)}.s4{fill:var(--s4)}.s5{fill:var(--s5)}.s6{fill:var(--s6)}
+.l1{stroke:var(--s1)}.l2{stroke:var(--s2)}.l3{stroke:var(--s3)}.l4{stroke:var(--s4)}.l5{stroke:var(--s5)}.l6{stroke:var(--s6)}
+.line{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.frame{fill:none;stroke:var(--grid);stroke-width:1}
+</style>
+<rect width="520" height="426" rx="10" fill="var(--surface)"/>
+<text x="20.0" y="28.0" class="t" text-anchor="start">Linear Search - step by step</text>
+<text x="20.0" y="46.0" class="sub" text-anchor="start">Milestone steps; lo / mid / hi mark the search window</text>
+<rect x="20" y="57" width="11" height="11" rx="2" class="bar"/>
+<text x="36.0" y="66.0" class="lab" text-anchor="start">still possible</text>
+<rect x="130.8" y="57" width="11" height="11" rx="2" class="dim"/>
+<text x="146.8" y="66.0" class="lab" text-anchor="start">ruled out</text>
+<rect x="210.60000000000002" y="57" width="11" height="11" rx="2" class="cmp"/>
+<text x="226.6" y="66.0" class="lab" text-anchor="start">probe</text>
+<rect x="265.6" y="57" width="11" height="11" rx="2" class="done"/>
+<text x="281.6" y="66.0" class="lab" text-anchor="start">found</text>
+<rect x="14" y="78" width="242" height="164" rx="8" class="frame"/>
+<text x="24.0" y="94.0" class="val" text-anchor="start">Step 1</text>
+<rect x="32.1" y="124.9" width="31.4" height="55.1" rx="2" class="bar"/>
+<text x="47.8" y="121.9" class="val" text-anchor="middle">8</text>
+<text x="47.8" y="191.0" class="idx" text-anchor="middle">0</text>
+<rect x="75.7" y="159.3" width="31.4" height="20.7" rx="2" class="bar"/>
+<text x="91.4" y="156.3" class="val" text-anchor="middle">3</text>
+<text x="91.4" y="191.0" class="idx" text-anchor="middle">1</text>
+<rect x="119.3" y="145.6" width="31.4" height="34.4" rx="2" class="bar"/>
+<text x="135.0" y="142.6" class="val" text-anchor="middle">5</text>
+<text x="135.0" y="191.0" class="idx" text-anchor="middle">2</text>
+<rect x="162.9" y="118.0" width="31.4" height="62.0" rx="2" class="bar"/>
+<text x="178.6" y="115.0" class="val" text-anchor="middle">9</text>
+<text x="178.6" y="191.0" class="idx" text-anchor="middle">3</text>
+<rect x="206.5" y="166.2" width="31.4" height="13.8" rx="2" class="bar"/>
+<text x="222.2" y="163.2" class="val" text-anchor="middle">2</text>
+<text x="222.2" y="191.0" class="idx" text-anchor="middle">4</text>
+<line x1="26" x2="244" y1="180" y2="180" class="axis"/>
+<text x="24.0" y="206.0" class="cap" text-anchor="start">Looking for 9. Start at index 0.</text>
+<rect x="264" y="78" width="242" height="164" rx="8" class="frame"/>
+<text x="274.0" y="94.0" class="val" text-anchor="start">Step 2</text>
+<rect x="282.1" y="124.9" width="31.4" height="55.1" rx="2" class="cmp"/>
+<text x="297.8" y="121.9" class="val" text-anchor="middle">8</text>
+<text x="297.8" y="191.0" class="idx" text-anchor="middle">0</text>
+<rect x="325.7" y="159.3" width="31.4" height="20.7" rx="2" class="bar"/>
+<text x="341.4" y="156.3" class="val" text-anchor="middle">3</text>
+<text x="341.4" y="191.0" class="idx" text-anchor="middle">1</text>
+<rect x="369.3" y="145.6" width="31.4" height="34.4" rx="2" class="bar"/>
+<text x="385.0" y="142.6" class="val" text-anchor="middle">5</text>
+<text x="385.0" y="191.0" class="idx" text-anchor="middle">2</text>
+<rect x="412.9" y="118.0" width="31.4" height="62.0" rx="2" class="bar"/>
+<text x="428.6" y="115.0" class="val" text-anchor="middle">9</text>
+<text x="428.6" y="191.0" class="idx" text-anchor="middle">3</text>
+<rect x="456.5" y="166.2" width="31.4" height="13.8" rx="2" class="bar"/>
+<text x="472.2" y="163.2" class="val" text-anchor="middle">2</text>
+<text x="472.2" y="191.0" class="idx" text-anchor="middle">4</text>
+<line x1="276" x2="494" y1="180" y2="180" class="axis"/>
+<text x="274.0" y="206.0" class="cap" text-anchor="start">a[0] = 8 is not 9: move on.</text>
+<rect x="14" y="248" width="242" height="164" rx="8" class="frame"/>
+<text x="24.0" y="264.0" class="val" text-anchor="start">Step 3</text>
+<rect x="32.1" y="294.9" width="31.4" height="55.1" rx="2" class="bar"/>
+<text x="47.8" y="291.9" class="val" text-anchor="middle">8</text>
+<text x="47.8" y="361.0" class="idx" text-anchor="middle">0</text>
+<rect x="75.7" y="329.3" width="31.4" height="20.7" rx="2" class="bar"/>
+<text x="91.4" y="326.3" class="val" text-anchor="middle">3</text>
+<text x="91.4" y="361.0" class="idx" text-anchor="middle">1</text>
+<rect x="119.3" y="315.6" width="31.4" height="34.4" rx="2" class="bar"/>
+<text x="135.0" y="312.6" class="val" text-anchor="middle">5</text>
+<text x="135.0" y="361.0" class="idx" text-anchor="middle">2</text>
+<rect x="162.9" y="288.0" width="31.4" height="62.0" rx="2" class="done"/>
+<text x="178.6" y="285.0" class="val" text-anchor="middle">9</text>
+<text x="178.6" y="361.0" class="idx" text-anchor="middle">key</text>
+<rect x="206.5" y="336.2" width="31.4" height="13.8" rx="2" class="bar"/>
+<text x="222.2" y="333.2" class="val" text-anchor="middle">2</text>
+<text x="222.2" y="361.0" class="idx" text-anchor="middle">4</text>
+<line x1="26" x2="244" y1="350" y2="350" class="axis"/>
+<text x="24.0" y="376.0" class="cap" text-anchor="start">a[3] = 9 equals 9: FOUND at index 3.</text>
+</svg>
