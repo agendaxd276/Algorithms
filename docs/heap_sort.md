@@ -4,8 +4,7 @@
 
 ![Heap Sort step by step](images/heap_sort_steps.svg)
 
-[← All algorithms](../README.md) · Source: [`algorithms/sorting/heap_sort.py`](../algorithms/sorting/heap_sort.py) ·
-Original hand-drawn notes: [`screenshots/heap_sort.png`](screenshots/heap_sort.png)
+[← All algorithms](../README.md) · Source: [`algorithms/sorting/heap_sort.py`](../algorithms/sorting/heap_sort.py)
 
 ## Quick answers
 
@@ -97,8 +96,8 @@ with the searched key highlighted (searching).
 
 | Tier | Extra memory (KiB, n=3000 random) | Max call-stack depth (n=800 sorted) | Time (ms, n=2000 random) |
 |---|---|---|---|
-| **Normal** | 0.4 | 11 | 4.1 |
-| **Optimal** | 0.3 | 3 | 4.6 |
+| **Normal** | 0.4 | 11 | 4.0 |
+| **Optimal** | 0.3 | 3 | 4.4 |
 | **Optimized** | 0.2 | 2 | 4.1 |
 
 <sub>Timings are indicative only (CPython 3.13.16, one machine); comparison counts, memory and stack depth are deterministic.</sub>

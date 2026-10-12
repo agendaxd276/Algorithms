@@ -246,14 +246,15 @@ def build_algo_doc(name, m):
     a, kind = ALGOS[name], ALGOS[name]["kind"]
     refs = REFERENCES["sorting" if kind == "sort" else "searching"]
     tier_code = "\n".join(md_tier_section(name, t) for t in TIERS)
+    has_shot = os.path.exists(os.path.join(DOCS, "screenshots", f"{name}.png"))
+    shot = f" ·\nOriginal hand-drawn notes: [`screenshots/{name}.png`](screenshots/{name}.png)" if has_shot else ""
     doc = f"""# {a['title']}
 
 > {a['one_liner']}
 
 ![{a['title']} step by step](images/{name}_steps.svg)
 
-[← All algorithms](../README.md) · Source: [`algorithms/{a['module']}`](../algorithms/{a['module']}) ·
-Original hand-drawn notes: [`screenshots/{name}.png`](screenshots/{name}.png)
+[← All algorithms](../README.md) · Source: [`algorithms/{a['module']}`](../algorithms/{a['module']}){shot}
 
 ## Quick answers
 

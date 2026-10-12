@@ -36,15 +36,15 @@ text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,Aria
 <text x="50.0" y="88.0" class="lab" text-anchor="end">4k</text>
 <rect x="77.7" y="272.7" width="46.9" height="13.3" rx="3" class="s1"/>
 <text x="101.1" y="268.7" class="val" text-anchor="middle">264</text>
-<rect x="126.6" y="269.0" width="46.9" height="17.0" rx="3" class="s2"/>
-<text x="150.0" y="265.0" class="val" text-anchor="middle">336</text>
+<rect x="126.6" y="268.7" width="46.9" height="17.3" rx="3" class="s2"/>
+<text x="150.0" y="264.7" class="val" text-anchor="middle">342</text>
 <rect x="175.4" y="279.4" width="46.9" height="6.6" rx="3" class="s3"/>
 <text x="198.9" y="275.4" class="val" text-anchor="middle">131</text>
 <text x="150.0" y="304.0" class="cap" text-anchor="middle">Best</text>
 <rect x="265.7" y="267.7" width="46.9" height="18.3" rx="3" class="s1"/>
 <text x="289.1" y="263.7" class="val" text-anchor="middle">362</text>
-<rect x="314.6" y="267.5" width="46.9" height="18.5" rx="3" class="s2"/>
-<text x="338.0" y="263.5" class="val" text-anchor="middle">367</text>
+<rect x="314.6" y="267.7" width="46.9" height="18.3" rx="3" class="s2"/>
+<text x="338.0" y="263.7" class="val" text-anchor="middle">363</text>
 <rect x="363.4" y="261.6" width="46.9" height="24.4" rx="3" class="s3"/>
 <text x="386.9" y="257.6" class="val" text-anchor="middle">483</text>
 <text x="338.0" y="304.0" class="cap" text-anchor="middle">Average</text>

@@ -84,9 +84,9 @@ with the searched key highlighted (searching).
 
 | Tier | Time per search (µs, n=100,000, key absent) |
 |---|---|
-| **Normal** | 4,447.2 |
-| **Optimal** | 3,925.5 |
-| **Optimized** | 1,144.6 |
+| **Normal** | 4,359.7 |
+| **Optimal** | 4,202.7 |
+| **Optimized** | 1,338.2 |
 
 <sub>Timings are indicative only (CPython 3.13.16, one machine); comparison counts, memory and stack depth are deterministic.</sub>
 

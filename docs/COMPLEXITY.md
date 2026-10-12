@@ -20,7 +20,7 @@ All numbers on the algorithm pages are **measured** by running the code in `algo
 | [Selection Sort](selection_sort.md) | O(n²) | O(n²) | O(n²) | O(1) | No | 2,016 |
 | [Insertion Sort](insertion_sort.md) | O(n) | O(n²) | O(n²) | O(1) | Yes | 1,118 |
 | [Merge Sort](merge_sort.md) | O(n log n) | O(n log n) | O(n log n) | O(n) | Yes | 307 |
-| [Quick Sort](quick_sort.md) | O(n log n) | O(n log n) | O(n²) (duplicates; astronomically rare otherwise) | O(log n) | No | 367 |
+| [Quick Sort](quick_sort.md) | O(n log n) | O(n log n) | O(n²) (duplicates; astronomically rare otherwise) | O(log n) | No | 363 |
 | [Heap Sort](heap_sort.md) | O(n log n) | O(n log n) | O(n log n) | O(1) | No | 571 |
 
 ![Average-case growth](images/overview_sorts_average.svg)

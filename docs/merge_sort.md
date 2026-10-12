@@ -92,7 +92,7 @@ with the searched key highlighted (searching).
 | Tier | Extra memory (KiB, n=3000 random) | Max call-stack depth (n=800 sorted) | Time (ms, n=2000 random) |
 |---|---|---|---|
 | **Normal** | 47.0 | 11 | 2.8 |
-| **Optimal** | 35.3 | 12 | 2.7 |
+| **Optimal** | 35.3 | 12 | 2.6 |
 | **Optimized** | 35.3 | 10 | 2.2 |
 
 <sub>Timings are indicative only (CPython 3.13.16, one machine); comparison counts, memory and stack depth are deterministic.</sub>

@@ -88,13 +88,13 @@ with the searched key highlighted (searching).
 | Tier | Best | Average | Worst |
 |---|---|---|---|
 | **Normal** | 264 <br><sub>balanced-pivot permutation</sub> | 362 <br><sub>random</sub> | 2,016 <br><sub>sorted</sub> |
-| **Optimal** | 336 <br><sub>reversed</sub> | 367 <br><sub>random</sub> | 2,016 <br><sub>all equal</sub> |
+| **Optimal** | 342 <br><sub>sorted</sub> | 363 <br><sub>random</sub> | 2,016 <br><sub>all equal</sub> |
 | **Optimized** | 131 <br><sub>all equal</sub> | 483 <br><sub>random</sub> | 666 <br><sub>balanced-pivot permutation</sub> |
 
 | Tier | Extra memory (KiB, n=3000 random) | Max call-stack depth (n=800 sorted) | Time (ms, n=2000 random) |
 |---|---|---|---|
-| **Normal** | 102.7 | 800 | 1.6 |
-| **Optimal** | 1.0 | 10 | 2.4 |
+| **Normal** | 102.7 | 800 | 1.7 |
+| **Optimal** | 1.1 | 10 | 2.2 |
 | **Optimized** | 1.0 | 7 | 2.5 |
 
 <sub>Timings are indicative only (CPython 3.13.16, one machine); comparison counts, memory and stack depth are deterministic.</sub>
